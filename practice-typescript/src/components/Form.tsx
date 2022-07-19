@@ -2,11 +2,10 @@ import React, { useState } from 'react'
 import "../css/Form.css"
 import { IState as Props } from "../App"
 
-interface IProps {
+export interface IProps {
   people: Props["people"],
   setPeople: React.Dispatch<React.SetStateAction<Props["people"]>>
 }
-
 const Form = ({ people, setPeople }: IProps) => {
   const [inputData, setInputData] = useState({ name: "", age: "", bio: "" });
   const onChange = (e: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>): void => {

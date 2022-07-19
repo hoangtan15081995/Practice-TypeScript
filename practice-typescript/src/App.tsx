@@ -11,10 +11,10 @@ export interface IState {
   }[]
 }
 function App() {
-  const [age, setAge] = useState(5);
-  const [name, setName] = useState("hoang tan");
-  const [inputData, setInputData] = useState({ name: "", age: "" })
-  const [size, setSize] = useState<number | string>(30);
+  // const [age, setAge] = useState(5);
+  // const [name, setName] = useState("hoang tan");
+  // const [inputData, setInputData] = useState({ name: "", age: "" })
+  // const [size, setSize] = useState<number | string>(30);
   const [people, setPeople] = useState<IState["people"]>([{name: "hoang tan", age: 27, bio: "developer"}])
   return (
     <div className="container"> 
