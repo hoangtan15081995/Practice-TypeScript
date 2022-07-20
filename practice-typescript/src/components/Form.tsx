@@ -23,7 +23,7 @@ const Form = ({ people, setPeople }: IProps) => {
     return (
         <div className="form-container">
             <h1>Form</h1>
-            <form onSubmit={OnSubmit}>
+            <form role="form" onSubmit={OnSubmit}>
                 <input type="text" name="name" id="name" placeholder="name" onChange={onChange} value={inputData.name} />
                 <input type="number" name="age" id="age" placeholder="age" onChange={onChange} value={inputData.age} />
                 <textarea name="bio" id="bio" placeholder="Bio Description" onChange={onChange} value={inputData.bio} ></textarea>
